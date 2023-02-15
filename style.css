@@ -1,0 +1,33 @@
+body{
+    background-color: wheat;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.box{
+    font-size: 2.5rem;
+    font-weight: 800;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    transform: translateX(-400%);
+    transition: transform 1s ease;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(400%);
+}
+
+.box.show{
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
